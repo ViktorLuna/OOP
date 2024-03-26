@@ -1,0 +1,59 @@
+what is oop / do you know oop?
+
+oop makes our code smaller by splitting it into classes, these classes contains attributes and methods as blueprint
+that will create an object on instance.
+
+FUNDAMENTALS
+
+attributes //properties or variables
+methods //behaviors or functions
+
+you might have a class called Animal that defines attributes such as name and age, and methods like eat() and sleep().
+
+ATTRIBUTES
+in a class Person, attributes could include name, age, gender, etc.
+
+METHODS
+in a class Car, methods could include start(), accelerate(), brake(), etc.
+
+OBJECTS
+instances of classes.
+They are created based on the structure defined by the class.
+Each object has its own set of attributes and can perform actions defined by the methods of its class.
+if you have a class Book, you can create multiple book objects, each representing a different book with its own title, author, etc.
+
+PRINCIPLES
+
+INHERITANCE
+in oop we implemented a parent-child classes, in which parent attributes and methods is passed to it's child classes.
+
+ENCAPSULATION
+is a way of exposing only selected information inside an object
+and adds security.
+
+ABSTRACTION
+is an extention of encapsulation that uses classes and objects.
+the attributes and methods is stored in an object that is being called to it's child classes.
+
+POLYMORPHISM
+designing objects to share behaviors. Using inheritance, objects can override shared parent behaviors with specific child behaviors.
+different behaviors in two ways: method overriding and method overloading.
+
+
+make a laravel app CRUD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

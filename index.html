@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <script>
+        class Vehicle {
+            constructor(engine) {
+                this.engine = engine
+            }
+
+            // methods
+            start(engineStatus){
+                this.engine = 'Start';
+            }
+
+            stop(engineStatus){
+                this.engine = 'Stop';
+            }
+
+            engineStatus(){
+                return this.engine
+            }
+        }
+
+        class Motorcyle extends Vehicle {
+            constructor(engine, pros, cons) {
+                super(engine);
+                this.pros = pros;
+                this.cons = cons;
+            }
+        }
+
+        class Sedan extends Vehicle {
+            constructor(engine, pros, cons) {
+                super(engine);
+                this.pros = pros;
+                this.cons = cons;
+            }
+        }
+
+        class Truck extends Vehicle {
+            constructor(engine, pros, cons) {
+                super(engine);
+                this.pros = pros;
+                this.cons = cons;
+            }
+        }
+
+        const myMotorCycle = new Motorcyle("Start","Speed and Slim","Prone to Accident");
+
+        console.log("Engine Test: " + myMotorCycle.engine);
+        console.log("Pros: " + myMotorCycle.pros);
+        console.log("Cons: " + myMotorCycle.cons);
+
+        myMotorCycle.stop();
+        console.log(myMotorCycle.engineStatus());
+
+    </script>
+</body>
+</html>

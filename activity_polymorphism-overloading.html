@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <script>
+        class Book {
+            constructor(author, title) {
+                this.author = author;
+                this.title = title;
+            }
+
+            availability(x) {
+                if (typeof x === 'undefined') {
+                    console.log('not available');
+                } else {
+                    console.log("the available pieces are: " + x);
+                }
+            }
+        }
+
+        class Manga extends Book {
+            constructor(author, title) {
+                super(author, title); // Constructor from parent class
+            }
+        }
+
+        const myManga = new Manga("Gege Akutangina", "Jujutsu Sukuna vs. All");
+        console.log("Author:" + " " + myManga.author);
+        console.log("Title:" + " " + myManga.title);
+        myManga.availability();    // Output: not available
+        myManga.availability(159); // Output: the available pieces are: 159
+
+    </script>
+</body>
+</html>
