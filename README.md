@@ -255,3 +255,77 @@ console.log("Title:" + " " + myManga.title);
 myManga.availability();    // Output: not available
 myManga.availability(159); // Output: the available pieces are: 159
 ```
+
+## Summary
+
+<h1></h1>
+
+```
+<!DOCTYPE html>
+<html>
+	<body>
+	
+	<h1>OOP</h1>
+	<h3>JavaScript Object Class, Objects, Attributes, Methods & Constructors.</h3>
+	
+	<p id="guard"></p>
+	<p id="agility"></p>
+	
+	<script>
+	
+	// Class function for Dog
+	class Dog {
+		// Constructor function for Dog objects
+	    constructor(name, kind) {
+	        this.name = name;
+	        this.kind = kind;
+	    }
+	    
+	    toBark(){
+	    	return alert('Bark');
+	    }
+	}
+	
+	class GuardDog extends Dog {
+	    constructor(name, kind, combatYears) {
+	        super(name, kind); // Constructor from parent class
+	        this.combatYears = combatYears;
+	    }
+	    
+	    toFight(){
+	    	return alert('Fighting')
+	    }
+	}
+	
+	class AgilityDog extends Dog {
+		constructor(name, kind, speed){
+	    	super(name, kind);
+	        this.speed = speed;
+	    }
+	    
+	    toRace(){
+	    	return alert('Running')
+	    }
+	}
+	
+	// Create Dog objects
+	const guard = new GuardDog("Bruno", "K9", "3 years");
+	const agility = new AgilityDog("Collie", "Border Collies", "25mph");
+	
+	guard.toBark();
+	agility.toBark();
+	guard.toFight();
+	agility.toRace();
+	
+	// Display Dog
+	document.getElementById("guard").innerHTML =
+	"My Dog's name is " + guard.name + ", he is a " + guard.kind + " and in service for for " + guard.combatYears + "."; 
+	
+	document.getElementById("agility").innerHTML =
+	"My Dog's name is " + agility.name + ", he is a " + agility.kind +" and the fastest dog in the contest with a record of " + agility.speed + ".";
+	
+	</script>
+	
+	</body>
+</html>
+``
