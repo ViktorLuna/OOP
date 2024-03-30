@@ -258,7 +258,8 @@ myManga.availability(159); // Output: the available pieces are: 159
 
 ## Summary
 
-<h1></h1>
+in this summary, Object Class, Objects, Attributes, Methods & Constructors are all implemented in one go.
+try running the whole code below here: [copy the code below and paste here](https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_constructor1)
 
 ```
 <!DOCTYPE html>
